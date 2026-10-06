@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>15 Funciones</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1 class="page">15 Funciones</h1>
+
+    <section>
+        <h2>Suma</h2>
+        <div class="campo"><label>Número 1</label><input type="number" id="suma-a" value="5"></div>
+        <div class="campo"><label>Número 2</label><input type="number" id="suma-b" value="3"></div>
+        <button onclick="calcularSuma()">Sumar</button>
+        <div id="res-suma" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>Restar Dos Números</h2>
+        <div class="campo"><label>Número 1</label><input type="number" id="restar-a" value="10"></div>
+        <div class="campo"><label>Número 2</label><input type="number" id="restar-b" value="3"></div>
+        <button onclick="calcularRestar()">Restar</button>
+        <div id="res-restar" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>Multiplicación</h2>
+        <div class="campo"><label>Número 1</label><input type="number" id="multiplicacion-a" value="4"></div>
+        <div class="campo"><label>Número 2</label><input type="number" id="multiplicacion-b" value="6"></div>
+        <button onclick="calcularMultiplicacion()">Multiplicar</button>
+        <div id="res-multiplicacion" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>División</h2>
+        <div class="campo"><label>Dividendo</label><input type="number" id="division-a" value="20"></div>
+        <div class="campo"><label>Divisor</label><input type="number" id="division-b" value="4"></div>
+        <button onclick="calcularDivision()">Dividir</button>
+        <div id="res-division" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>Potencia</h2>
+        <div class="campo"><label>Base</label><input type="number" id="potencia-a" value="2"></div>
+        <div class="campo"><label>Exponente</label><input type="number" id="potencia-b" value="8"></div>
+        <button onclick="calcularPotencia()">Calcular</button>
+        <div id="res-potencia" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>¿Cuál es mayor?</h2>
+        <div class="campo"><label>Número 1</label><input type="number" id="mayor-a" value="8"></div>
+        <div class="campo"><label>Número 2</label><input type="number" id="mayor-b" value="15"></div>
+        <button onclick="calcularMayor()">Comparar</button>
+        <div id="res-mayor" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>El Más Pequeño</h2>
+        <div class="campo"><label>Números (separados por coma)</label><input type="text" id="menor-a" value="8, 3, 12, 1, 7"></div>
+        <button onclick="calcularMenor()">Buscar</button>
+        <div id="res-menor" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>¿Positivo o Negativo?</h2>
+        <div class="campo"><label>Número</label><input type="number" id="positivo-a" value="-4"></div>
+        <button onclick="calcularPositivo()">Verificar</button>
+        <div id="res-positivo" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>¿Par o Impar?</h2>
+        <div class="campo"><label>Número</label><input type="number" id="parimpar-a" value="7"></div>
+        <button onclick="calcularParImpar()">Verificar</button>
+        <div id="res-parimpar" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>Solo Impares</h2>
+        <div class="campo"><label>Números (separados por coma)</label><input type="text" id="impares-a" value="1, 2, 3, 4, 5, 6, 7, 8, 9, 10"></div>
+        <button onclick="calcularImpares()">Buscar</button>
+        <div id="res-impares" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>Filtrar Negativos</h2>
+        <div class="campo"><label>Números (separados por coma)</label><input type="text" id="negativos-a" value="-3, 5, -1, 8, -7, 2"></div>
+        <button onclick="calcularNegativos()">Filtrar</button>
+        <div id="res-negativos" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>Mitad de Cada Número</h2>
+        <div class="campo"><label>Números (separados por coma)</label><input type="text" id="mitad-a" value="10, 6, 20, 8"></div>
+        <button onclick="calcularMitadBtn()">Calcular</button>
+        <div id="res-mitad" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>Calcular Descuento</h2>
+        <div class="campo"><label>Precio</label><input type="number" id="descuento-a" value="200"></div>
+        <div class="campo"><label>Descuento (%)</label><input type="number" id="descuento-b" value="15"></div>
+        <button onclick="calcularDescuentoBtn()">Calcular</button>
+        <div id="res-descuento" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>Área del Cuadrado</h2>
+        <div class="campo"><label>Lado</label><input type="number" id="areacuadrado-a" value="5"></div>
+        <button onclick="calcularAreaCuadrado()">Calcular</button>
+        <div id="res-areacuadrado" class="resultado"></div>
+    </section>
+
+    <section>
+        <h2>Área del Rectángulo</h2>
+        <div class="campo"><label>Base</label><input type="number" id="arearectangulo-a" value="6"></div>
+        <div class="campo"><label>Altura</label><input type="number" id="arearectangulo-b" value="4"></div>
+        <button onclick="calcularAreaRectangulo()">Calcular</button>
+        <div id="res-arearectangulo" class="resultado"></div>
+    </section>
+
+    <script src="js/suma.js"></script>
+    <script src="js/restar.js"></script>
+    <script src="js/multiplicacion.js"></script>
+    <script src="js/division.js"></script>
+    <script src="js/potencia.js"></script>
+    <script src="js/mayor.js"></script>
+    <script src="js/menor.js"></script>
+    <script src="js/positivo.js"></script>
+    <script src="js/parimpar.js"></script>
+    <script src="js/impares.js"></script>
+    <script src="js/negativos.js"></script>
+    <script src="js/mitad.js"></script>
+    <script src="js/descuento.js"></script>
+    <script src="js/areacuadrado.js"></script>
+    <script src="js/arearectangulo.js"></script>
+
+    <script>
+        function num(id) {
+            var v = parseFloat(document.getElementById(id).value);
+            return isNaN(v) ? 0 : v;
+        }
+
+        function lista(id) {
+            var partes = document.getElementById(id).value.split(",");
+            var nums = [];
+            for (var i = 0; i < partes.length; i++) {
+                var v = parseFloat(partes[i].trim());
+                if (!isNaN(v)) nums.push(v);
+            }
+            return nums;
+        }
+
+        function mostrar(id, texto) {
+            document.getElementById(id).innerText = texto;
+        }
+
+        function calcularSuma() {
+            mostrar('res-suma', sumar(num('suma-a'), num('suma-b')));
+        }
+
+        function calcularRestar() {
+            mostrar('res-restar', restar(num('restar-a'), num('restar-b')));
+        }
+
+        function calcularMultiplicacion() {
+            mostrar('res-multiplicacion', multiplicar(num('multiplicacion-a'), num('multiplicacion-b')));
+        }
+
+        function calcularDivision() {
+            mostrar('res-division', dividir(num('division-a'), num('division-b')));
+        }
+
+        function calcularPotencia() {
+            mostrar('res-potencia', potencia(num('potencia-a'), num('potencia-b')));
+        }
+
+        function calcularMayor() {
+            mostrar('res-mayor', obtenerMayor(num('mayor-a'), num('mayor-b')));
+        }
+
+        function calcularMenor() {
+            mostrar('res-menor', encontrarMenor(lista('menor-a')));
+        }
+
+        function calcularPositivo() {
+            mostrar('res-positivo', verificarSigno(num('positivo-a')));
+        }
+
+        function calcularParImpar() {
+            mostrar('res-parimpar', verificarParImpar(num('parimpar-a')));
+        }
+
+        function calcularImpares() {
+            mostrar('res-impares', buscarImpares(lista('impares-a')));
+        }
+
+        function calcularNegativos() {
+            mostrar('res-negativos', filtrarNegativos(lista('negativos-a')));
+        }
+
+        function calcularMitadBtn() {
+            mostrar('res-mitad', calcularMitad(lista('mitad-a')));
+        }
+
+        function calcularDescuentoBtn() {
+            mostrar('res-descuento', calcularDescuento(num('descuento-a'), num('descuento-b')));
+        }
+
+        function calcularAreaCuadrado() {
+            mostrar('res-areacuadrado', areaCuadrado(num('areacuadrado-a')));
+        }
+
+        function calcularAreaRectangulo() {
+            mostrar('res-arearectangulo', areaRectangulo(num('arearectangulo-a'), num('arearectangulo-b')));
+        }
+
+        function calcularTodo() {
+            calcularSuma();
+            calcularRestar();
+            calcularMultiplicacion();
+            calcularDivision();
+            calcularPotencia();
+            calcularMayor();
+            calcularMenor();
+            calcularPositivo();
+            calcularParImpar();
+            calcularImpares();
+            calcularNegativos();
+            calcularMitadBtn();
+            calcularDescuentoBtn();
+            calcularAreaCuadrado();
+            calcularAreaRectangulo();
+        }
+
+        calcularTodo();
+    </script>
+</body>
+</html>
